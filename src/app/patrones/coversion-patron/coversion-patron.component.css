@@ -1,0 +1,16 @@
+/*Caso para menos de 576px*/
+
+@media screen and (max-width: 576px) {
+    .divfotos {
+        display: none;
+    }
+}
+
+
+/* tamaño sm*/
+
+@media screen and (max-width: 768px) {
+    .divfotos {
+        display: none;
+    }
+}
