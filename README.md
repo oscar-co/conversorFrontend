@@ -1,27 +1,74 @@
-# ConversorUnidades
+# Conversor de Unidades + Calculador de Incertidumbre – Frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
+Este proyecto es una aplicación web desarrollada en Angular que permite:
 
-## Development server
+1. **Convertir unidades físicas** de distintas magnitudes (longitud, masa, temperatura, etc.)
+2. **Calcular incertidumbre compuesta** en mediciones físicas utilizando patrones de medida
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Fue desarrollado como proyecto personal en 2022, integrando Angular 8 en frontend y Laravel en backend. A pesar de estar construido con versiones anteriores, refleja una arquitectura clara orientada a componentes y la integración de lógica científica aplicada.
 
-## Code scaffolding
+> Actualmente estoy trabajando con Angular moderno y Spring Boot, pero mantengo este proyecto como muestra de mis primeras aplicaciones con lógica real aplicada a la metrología y la física en la cual comencé i trayectoria profesional.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## Tecnologías utilizadas
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- **Angular 8**
+- **TypeScript**
+- **Bootstrap 4**
+- **API REST** (Laravel backend)
 
-## Running unit tests
+---
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Funcionalidades principales
 
-## Running end-to-end tests
+- Conversión de unidades entre distintas magnitudes físicas:
+  - Longitud
+  - Masa
+  - Tiempo
+  - Temperatura
+  - Presión
+  - Volumen
+  - Etc.
+- Cálculo de incertidumbre compuesta a partir de patrones de medida
+- Interfaz intuitiva y responsiva
+- Separación por componentes
+- Consumo de APIs para mantener lógica desacoplada
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+---
 
-## Further help
+## Estructura del proyecto
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- `src/app/` – contiene componentes como:
+  - `home` – vista principal del conversor
+  - `header` – barra de navegación
+- `services/conversor.service.ts` – lógica de consumo de la API
+- `app-routing.module.ts` – define navegación
+- Uso de interfaces y clases para mantener estructura clara
+
+---
+
+1. Clona el repositorio:
+`git clone https://github.com/oscar-co/conversorFrontend`
+`cd conversorFrontend`
+
+2. Instala las dependencias:
+`npm install`
+
+3. Instala Angular CLI 8 si no la tienes:
+`npm install @angular/cli@8.3.29`
+
+4. Levanta el servidor de desarrollo:
+`npx ng serve`
+
+5. Accede desde el navegador a http://localhost:4200
+
+
+## Motivación
+Este proyecto nació de mi interés por la metrología y el control de calidad en entornos técnicos en el cual estuve trabajando varios años. Lo utilicé para aplicar conceptos como:
+
+Incertidumbre en patrones de medida
+
+Conversión entre unidades físicas
+
+Integración frontend-backend con lógica desacoplada
